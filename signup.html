@@ -1,0 +1,31 @@
+<html>
+<body>
+<form method="GET" action="phpcode.php">
+<center><table><h2>Sign Up</h2>
+Already have an account?<a href="signin.html">Sign In</a>
+<br>
+<h3>Email</h3>
+<tr><input type=email name="t1" required></tr>
+<h3>Password</h3>
+<tr><input type=password name="t2" required></tr>
+<h3>Secret</h3>
+<tr><input type=password name="t3" required></tr><h1><input type=submit value="Sign In"></h1>
+</table>
+</center>
+</form>
+</body>
+</html>
+<!-- HERE WE CAN STORE THE DATA INTO TABLE 
+<?php
+$conn = mysqli_connect("localhost", "root","", "zoho");
+if (!$conn)
+{
+echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+$i=$_GET['t1'];
+$u=$_GET['t2'];
+$v=$_GET['t3'];
+$sql="insert into tablezoho1 values ('$i',$u,'$v')";
+$result=mysqli_query($conn,$sql);
+?>
+-->
